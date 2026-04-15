@@ -1,4 +1,6 @@
 export default function Footer() {
+  const date=new Date().getFullYear()
+
   return (
     <footer>
       <div className="footer-content">
@@ -8,7 +10,7 @@ export default function Footer() {
           <a href="https://github.com/SamWijes" target="_blank" rel="noreferrer">GitHub</a>
         </div>
         <div className="copyright">
-          © 2026 Samith Wijesekara. All rights reserved.
+          © {date} Samith Wijesekara. All rights reserved.
         </div>
       </div>
     </footer>
