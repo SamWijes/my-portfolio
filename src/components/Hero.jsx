@@ -7,7 +7,7 @@ export default function Hero() {
     const handleScroll = () => {
       const scrolled = window.pageYOffset
       if (heroContentRef.current) {
-        heroContentRef.current.style.transform = `translateY(${scrolled * 0.3}px)`
+        heroContentRef.current.style.transform = `translateY(${scrolled * 0.2}px)`
         heroContentRef.current.style.opacity = 1 - scrolled / 500
       }
     }

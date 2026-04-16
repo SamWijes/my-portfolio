@@ -1,4 +1,8 @@
+import { Hamburger } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import Hamberg from './Hamberg'
+import Logo from '../assets/favicon.svg?react';
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -22,7 +26,13 @@ export default function Navbar() {
   return (
     <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
       <div className="nav-content">
-        <div className="logo">SW</div>
+        {/* <div className="logo">SW</div> */}
+        <div className='logo-wrap'>
+
+          <Logo className="logo-2" />
+
+        </div>
+        <Hamberg className="hamberg" />
         <ul className="nav-links">
           <li><a href="#home" onClick={(e) => handleNavClick(e, '#home')}>Home</a></li>
           <li><a href="#skills" onClick={(e) => handleNavClick(e, '#skills')}>Skills</a></li>
