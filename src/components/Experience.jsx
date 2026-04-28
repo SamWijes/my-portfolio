@@ -54,6 +54,10 @@ export default function Experience() {
     return () => observer.disconnect()
   }, [])
 
+  useEffect(()=>{
+     
+  });
+
   return (
     <section id="experience">
       <div className="container">
@@ -64,7 +68,7 @@ export default function Experience() {
           </h2>
           <p className="section-subtitle">Building innovative solutions across diverse domains</p>
         </div>
-
+        
         <div className="timeline">
           {experienceData.map((item, index) => (
             <div

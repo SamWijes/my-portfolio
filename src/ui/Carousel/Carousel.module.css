@@ -1,0 +1,97 @@
+.wrapper{
+    display: flex;
+    /* position: relative; */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color:var(--bg-secondary);
+    height: 600px;
+}
+.wrapper picture{
+    display: flex;
+    /* position: relative; */
+}
+.wrapper img{
+    display: block;
+    margin: auto;
+    /* border: 5px red solid; */
+    border-radius: 20px;
+    height: 80%;
+    width: 80%;
+}
+.container{
+    display:flex;
+    height:90%;
+    width: 100%;
+    /* justify-content: center; */
+    align-items: center;
+ 
+    /* gap: 2rem; */
+}
+
+.container div{
+    display: flex;
+    
+    align-items: center;
+
+}
+
+.img1{
+    flex:1;
+    border-radius: 20px;
+    margin-right: -50px;
+    max-width: 100px;
+    height: 50%;
+    align-items: center;
+    background-size: cover;
+    
+    background-position: 100%;
+
+    
+}
+.licon{
+     /* position: relative; */
+    z-index: 1;
+    color:rgb(231, 223, 223);
+    filter: drop-shadow(0px 0px 5px rgb(22, 19, 19))
+            drop-shadow(0px 0px 5px rgb(237, 234, 234))
+            drop-shadow(0px 0px 5px rgb(22, 19, 19))
+    
+}
+.ricon{
+   
+    color:rgb(231, 223, 223);
+    margin-left: auto;
+    filter: drop-shadow(0px 0px 5px rgb(22, 19, 19))
+            drop-shadow(0px 0px 5px rgb(237, 234, 234))
+            drop-shadow(0px 0px 5px rgb(22, 19, 19))
+}
+.ricon:active{
+    transform: translateY(-2px);
+}
+.licon:active{
+    transform: translateY(-2px);
+}
+.img2{
+    flex:3;
+    position: relative;
+    
+    border-radius: 20px;
+     height: 90%;
+     background-size: contain;
+     
+     background-position: center;
+     background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+.img3{
+    flex:1;
+    max-width: 100px;
+    margin-left: -50px;
+    border-radius: 20px;
+    height: 50%;
+    align-items: center;
+    
+    
+}

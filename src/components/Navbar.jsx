@@ -23,6 +23,7 @@ export default function Navbar() {
     }
   }
 
+
   return (
     <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
       <div className="nav-content">
@@ -33,12 +34,14 @@ export default function Navbar() {
 
         </div>
         <Hamberg className="hamberg" />
+        
         <ul className="nav-links">
           <li><a href="#home" onClick={(e) => handleNavClick(e, '#home')}>Home</a></li>
           <li><a href="#skills" onClick={(e) => handleNavClick(e, '#skills')}>Skills</a></li>
           <li><a href="#experience" onClick={(e) => handleNavClick(e, '#experience')}>Experience</a></li>
           <li><a href="#projects" onClick={(e) => handleNavClick(e, '#projects')}>Projects</a></li>
           <li><a href="#education" onClick={(e) => handleNavClick(e, '#education')}>Education</a></li>
+          <li><a href="#contact-me" onClick={(e) => handleNavClick(e, '#contact-me')}>Contact Me</a></li>
         </ul>
       </div>
     </nav>

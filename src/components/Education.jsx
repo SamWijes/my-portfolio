@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { GraduationCap } from 'lucide-react';
+import FloatingNav from '../ui/FloatingNav';
+import Modal from '../ui/Modal/Modal';
 
 
 const CertIcon = () => (
@@ -71,7 +73,9 @@ export default function Education() {
 
   return (
     <section id="education">
+      
       <div className="container">
+        
         <div className="section-header">
           <div className="section-number">04</div>
           <h2 className="section-title">
@@ -79,7 +83,7 @@ export default function Education() {
           </h2>
           <p className="section-subtitle">Building a strong foundation in software and engineering principles</p>
         </div>
-
+        
         <div className="education-grid">
           {educationData.map((item, index) => (
             <div
