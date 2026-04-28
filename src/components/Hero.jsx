@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react'
-
+import FloatingNav from '../ui/FloatingNav'
 export default function Hero() {
   const heroContentRef = useRef(null)
-
+  
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.pageYOffset
@@ -14,9 +14,14 @@ export default function Hero() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
+  // useEffect(() =>{
+  //   const observer=new IntersectionObserver(()=>{},{})
+  //   observer.observe(c)
+  //   return(()=>observer.disconnect())
+  // },[])
   return (
     <section id="home" className="hero">
+     
       <div className="hero-content" ref={heroContentRef}>
         <div className="hero-badge">Available for Work</div>
         <h1>
@@ -26,7 +31,7 @@ export default function Hero() {
         </h1>
         <h2>Software Engineer &amp; Full Stack Developer</h2>
         <p>Specializing in automation, web scraping, and intelligent systems. Turning complex data challenges into elegant solutions.</p>
-
+       
         <div className="contact-info">
           <div className="contact-item">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,7 +41,7 @@ export default function Hero() {
           </div>
           
         </div>
-
+        
         <div className="social-links">
           <a href="https://linkedin.com/in/samith-wijesekara-39b93a15b" target="_blank" rel="noreferrer" className="social-link">
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,13 +55,14 @@ export default function Hero() {
             </svg>
           </a>
         </div>
-
+        
         <div className="scroll-indicator">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>
       </div>
+      <FloatingNav  elementRef={heroContentRef}/>
     </section>
   )
 }

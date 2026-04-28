@@ -3,13 +3,13 @@
   flex-direction: column;
 }
 
-label {
+.wrapper label {
   font:1.2rem "Crimson Pro", serif;
   margin-bottom: 5px;
   margin-top: 5px;
 }
 
-input {
+.wrapper input {
   padding: 10px 14px;
   border-radius: 12px;
   font-size: large;

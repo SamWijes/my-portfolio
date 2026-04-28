@@ -23,11 +23,18 @@
 
   color: #fff;
 }
-
+.formbox form{
+  width: 70%;
+  max-width:500px;
+  min-width: fit-content;
+  
+}
 .formbox fieldset {
+ 
   padding: 10px;
   border-radius: 15px;
-  width: 25rem;
+  width: 100%;
+  max-width: 100%;
   border: 2px var(--border-color) solid;
   box-shadow: var(--border-color) 0px 0px 20px;
 }

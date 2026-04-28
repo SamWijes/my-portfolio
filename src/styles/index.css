@@ -284,6 +284,7 @@ nav.scrolled {
   align-items: center;
   justify-content: center;
   background: var(--bg-card);
+  stroke-width: 5px;
   border: 1px solid var(--border-color);
   border-radius: 50%;
   transition: all 0.3s ease;
@@ -393,12 +394,14 @@ section {
   height: 4px;
   background: linear-gradient(90deg, var(--accent-amber), var(--accent-orange));
   transform: scaleX(0);
+
   transform-origin: left;
   transition: transform 1s ease;
 }
 
 .skill-category:hover::before {
   transform: scaleX(1);
+ 
 }
 
 .skill-category:hover {
@@ -580,7 +583,7 @@ section {
 
 .project-card:hover {
   transform: translateY(-10px);
- 
+  cursor: pointer;
   border-color: var(--accent-gold);
   box-shadow: 0 20px 60px rgba(245, 159, 11, 0.066);
 }
@@ -610,7 +613,7 @@ section {
   margin-bottom: 1rem;
   transition :color 0.5s ease
 }
-.project-card h3:hover {
+.project-card:hover h3 {
 
   color:#f59e0b;
 

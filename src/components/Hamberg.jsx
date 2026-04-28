@@ -12,10 +12,10 @@ function Hamberg({className}) {
         if (target) {
             target.scrollIntoView({ behavior: 'smooth', block: 'start' })
         }
-
+        setClicked(false);
     }
-    const MotionMenu = motion(Menu);
-    const MotionX = motion(XIcon);
+    const MotionMenu = motion.create(Menu);
+    const MotionX = motion.create(XIcon);
     const handleClick = () => { setClicked((prev) => !prev) }
     return (
         <div className={className} >
@@ -43,6 +43,7 @@ function Hamberg({className}) {
                     <button onClick={(e) => handleNavClick(e, '#experience')}>Experience</button>
                     <button onClick={(e) => handleNavClick(e, '#projects')}>Projects</button>
                     <button onClick={(e) => handleNavClick(e, '#education')}>Education</button>
+                    <button onClick={(e) => handleNavClick(e, '#contact-me')}>Contact Me</button>
                 </div>
             }
 
